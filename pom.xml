@@ -15,7 +15,7 @@
 
   <name>token-bucket</name>
   <description>Token bucket algorithm for rate-limiting</description>
-  <url>http://github.com/bbeck/token-bucket</url>
+  <url>https://github.com/nduyhai/token-bucket.git</url>
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>
@@ -30,9 +30,9 @@
   </properties>
 
   <scm>
-    <url>http://github.com/bbeck/token-bucket</url>
-    <connection>scm:git:git@github.com:bbeck/token-bucket.git</connection>
-    <developerConnection>scm:git:git@github.com:bbeck/token-bucket.git</developerConnection>
+    <url>https://github.com/nduyhai/token-bucket.git</url>
+    <connection>scm:git:git@github.com:nduyhai/token-bucket.git</connection>
+    <developerConnection>scm:git:git@github.com:nduyhai/token-bucket.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
@@ -42,7 +42,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
-        <version>2.5.1</version>
+        <version>2.5.3</version>
         <configuration>
           <tagNameFormat>v@{project.version}</tagNameFormat>
         </configuration>
@@ -62,7 +62,7 @@
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
-      <version>18.0</version>
+      <version>28.1-jre</version>
     </dependency>
 
     <dependency>

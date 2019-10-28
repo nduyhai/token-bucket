@@ -58,7 +58,6 @@ class TokenBucketImpl implements TokenBucket
    *
    * @return The capacity of the bucket.
    */
-  @Override
   public long getCapacity()
   {
     return capacity;
@@ -69,7 +68,6 @@ class TokenBucketImpl implements TokenBucket
    *
    * @return The current number of tokens in the bucket.
    */
-  @Override
   public synchronized long getNumTokens()
   {
     // Give the refill strategy a chance to add tokens if it needs to so that we have an accurate
@@ -87,7 +85,6 @@ class TokenBucketImpl implements TokenBucket
   * @param unit The time unit to express the return value in.
   * @return The amount of time until the next group of tokens can be added to the token bucket.
   */
-  @Override
   public long getDurationUntilNextRefill(TimeUnit unit) throws UnsupportedOperationException
   {
     return refillStrategy.getDurationUntilNextRefill(unit);

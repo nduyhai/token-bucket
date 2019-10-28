@@ -49,7 +49,6 @@ public class FixedIntervalRefillStrategy implements TokenBucketImpl.RefillStrate
     this.nextRefillTime = -periodDurationInNanos;
   }
 
-  @Override
   public synchronized long refill()
   {
     long now = ticker.read();
@@ -70,7 +69,6 @@ public class FixedIntervalRefillStrategy implements TokenBucketImpl.RefillStrate
     return numPeriods * numTokensPerPeriod;
   }
 
-  @Override
   public long getDurationUntilNextRefill(TimeUnit unit)
   {
     long now = ticker.read();

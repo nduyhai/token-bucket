@@ -228,7 +228,6 @@ public class TokenBucketImplTest
       return numTokens;
     }
 
-    @Override
     public long getDurationUntilNextRefill(TimeUnit unit) throws UnsupportedOperationException
     {
       throw new UnsupportedOperationException();
