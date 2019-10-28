@@ -4,7 +4,7 @@
 
   <groupId>org.isomorphism</groupId>
   <artifactId>token-bucket</artifactId>
-  <version>1.8</version>
+  <version>1.9-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <parent>
@@ -33,7 +33,7 @@
     <url>https://github.com/nduyhai/token-bucket.git</url>
     <connection>scm:git:git@github.com:nduyhai/token-bucket.git</connection>
     <developerConnection>scm:git:git@github.com:nduyhai/token-bucket.git</developerConnection>
-    <tag>v1.8</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <build>
